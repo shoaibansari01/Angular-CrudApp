@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student List</title>
+
+        <link rel="stylesheet" href="list-student.component.css">
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+<table>
+    <thead>
+        <tr>
+            <th>Student id</th>
+            <th>Roll No</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Contact No</th>
+            <th>Course</th>
+            <th>Education</th>
+            <th>Action 1</th>
+            <th>Action 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of studArr">
+            <td data-title="Student id">{{i.id}}</td>
+            <td data-title="Roll No">{{i.rollno}}</td>
+            <td data-title="First Name">{{i.firstName}}</td>
+            <td data-title="Last Name">{{i.lastName}}</td>
+            <td data-title="Address">{{i.address}}</td>
+            <td data-title="Email">{{i.email}}</td>
+            <td data-title="Contact No">{{i.contactNo}}</td>
+            <td data-title="Course">{{i.course}}</td>
+            <td data-title="Education">{{i.education}}</td>
+            <td data-title="Action 1"><button (click)="editStudent(i.id)">EDIT</button></td>
+            <td data-title="Action 2"><button (click)="deleteStudent(i.id)">DELETE</button></td>
+            </tr>
+    </tbody>
+    
+
+</table>
+<br><br>
+<h3>
+    <a href="Home" class="previous">&laquo; Previous</a>
+</h3>
+
+</body>
+
+</html>

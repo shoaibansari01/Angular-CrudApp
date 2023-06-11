@@ -1,0 +1,37 @@
+#heading{
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 8px blue;
+    
+
+ }
+ body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .nav-itom{
+    align-items: center;
+    justify-content: center;
+    
+ }
+.btn{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    color: #A2A1A1;
+}
+.wlc{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+

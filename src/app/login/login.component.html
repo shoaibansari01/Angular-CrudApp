@@ -1,0 +1,25 @@
+<html >
+     <body>
+          <div class="background">
+               <div class="shape"></div>
+               <div class="shape"></div>
+          </div>
+     <form>
+          <h3>Login Here</h3>
+          <label for="username">Username</label>
+          <input type="text" name="unm" #unm  placeholder="Email or Username" id="username">
+
+          <label for="password">Password</label>
+          <input type="password" name="pass" #pass placeholder="Password" id="password">
+
+          <input type="button" class="button btn btn-primary" value="Log In" (click)="login(unm.value,pass.value)"/>
+
+
+          <div class="social">
+               <div class="go"><i class="fab fa-github"><a href="https://github.com/shoaibansari01" target="_blank">Github</a></i></div>
+               <div class="fb"><i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/shoaib-ansari-15794b18b/" target="_blank">LinkedIn</a></i></div>
+
+          </div>
+     </form>      
+     </body>
+</html>

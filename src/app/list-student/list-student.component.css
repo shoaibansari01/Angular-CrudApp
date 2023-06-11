@@ -1,0 +1,74 @@
+body {
+    font-size: 10px;
+    font-family: 'Secular One', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .25);
+}
+table tr {
+    padding: .45em;
+}
+thead tr {
+    background-color: #6e0737;
+}
+
+tbody tr:nth-child(even){
+    background-color: #eaeaea;
+}
+table th,
+table td {
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+}
+thead th {
+    color: #fff;
+    font-size: 1.15em;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+@media (max-width:440px){
+    table{
+        border: 3px solid #6e0737;
+    }
+    table thead tr {
+        display: none;
+    }
+    table tr {
+        display: block;
+    }
+    table th, table td {
+        padding: .5em;
+
+    }
+    table td {
+        text-align: right;
+        display: block;
+        font-size: 1em;
+    }
+    table td::before {
+        content: attr(data-title) ": ";
+        float: left;
+    }
+    tbody tr:nth-child(even){
+        background-color: #6e0737;
+        color: #fff;
+    }
+}

@@ -1,0 +1,23 @@
+<!-- <input type="submit" value="REGISTER" [disabled]="regFrm.invalid" /> -->
+<body>
+
+    <h1>Edit Student</h1>
+    <form name="regfrm" #regFrm="ngForm" (ngSubmit)="save()" novalidate="">
+        <input type="text" name="id" placeholder=" Student id" [(ngModel)]="regObj.id" #id="ngModel" required/>
+        <span *ngIf="id.touched && id.invalid">please Enter valid id</span><br><br>
+        <input type="text" name="rollno" placeholder=" Roll no" [(ngModel)]="regObj.rollno" #rollno="ngModel"/> <br><br>
+        <input type="text" name="firstName" placeholder=" First Name" [(ngModel)]="regObj.firstName" #firstName="ngModel"/> <br><br>
+        <input type="text" name="lastName" placeholder=" Last Name" [(ngModel)]="regObj.lastName" #lastName="ngModel" required/> <br><br>
+        <input type="text" name="address" placeholder="Address" [(ngModel)]="regObj.address" #address="ngModel"/> <br><br>
+        <input type="text" name="email" placeholder="Email" [(ngModel)]="regObj.email" #email="ngModel" required/>
+        <span *ngIf="email.touched && email.invalid">Please Enter valid email</span> <br><br>
+        <input type="text" name="contactNo" placeholder="Contact No" [(ngModel)]="regObj.contactNo" #contactNo="ngModel" minlength="10" maxlength="10" required/>
+        <span *ngIf="contactNo.touched && contactNo.invalid"> please Enter the valid mobile no </span> <br><br>
+        <input type="text" name="course" placeholder="Coruse" [(ngModel)]="regObj.course" #course="ngModel"/> <br><br>
+        <input type="text" name="education" placeholder="Education" [(ngModel)]="regObj.education" #education="ngModel"/> <br><br>
+        <input type="submit" value="REGISTER" [disabled]="regFrm.invalid" />
+        
+        </form>
+        <br><br> 
+       
+</body>
